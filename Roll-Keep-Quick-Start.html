@@ -58,37 +58,6 @@
             font-weight: bold;
         }
 
-        .D6,
-        .D8,
-        .D10,
-        .D12 {
-            text-align: center;
-            display: inline-block;
-            width: 1.8em;
-            height: 1.7em;
-            line-height: 1.8em;
-            padding-top: 0.1em;
-            color: #ffffff;
-            font-family: 'URW Gothic';
-            font-weight: bold;
-        }
-
-        .D4k,
-        .D6k,
-        .D8k,
-        .D10k,
-        .D12k {
-            text-align: center;
-            display: inline-block;
-            width: 1.8em;
-            height: 1.7em;
-            line-height: 1.8em;
-            padding-top: 0.1em;
-            color: #000000;
-            font-family: 'URW Gothic';
-            font-weight: bold;
-        }
-
         .icon-defs {
             display: none;
         }
@@ -121,52 +90,39 @@
             font-weight: bold;
         }
 
+        svg .unused polygon {
+            stroke: rgb(128, 128, 128);
+            stroke-width: 4;
+            fill: rgb(255, 255, 255);
+        }
+
+        svg .unused text {
+            fill: rgb(128, 128, 128);
+            text-anchor: middle;
+            dominant-baseline: middle;
+            font-family: 'URW Gothic';
+            font-weight: bold;
+        }
+
+        svg .hitch polygon {
+            stroke: rgb(0, 0, 0);
+            stroke-width: 4;
+            fill: rgb(128, 128, 128);
+        }
+
+        svg .hitch text {
+            fill: rgb(0, 0, 0);
+            text-anchor: middle;
+            dominant-baseline: middle;
+            font-family: 'URW Gothic';
+            font-weight: bold;
+        }
+
         .d {
             width: 1.8em;
             height: 1.8em;
             display: inline-block;
-            position: relative;
-            bottom: -0.4em;
-        }
-
-        .xD4 {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="0,13 100,13 50,100" stroke="rgb(177,23,68)" stroke-width="4" fill="rgb(177,23,68)"/></svg>');
-        }
-
-        .D4k {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="0,13 100,13 50,100" stroke="rgb(177,23,68)" stroke-width="4" fill="rgb(255,255,255)"/></svg>');
-        }
-
-        .D6 {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="13,13 87,13 87,87 13,87" stroke="rgb(177,23,68)" stroke-width="4" fill="rgb(177,23,68)"/></svg>');
-        }
-
-        .D6k {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="13,13 87,13 87,87 13,87" stroke="rgb(177,23,68)" stroke-width="4" fill="rgb(255,255,255)"/></svg>');
-        }
-
-        .D8 {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,0 100,50 50,100 0,50" stroke="rgb(177,23,68)" stroke-width="4" fill="rgb(177,23,68)"/></svg>');
-        }
-
-        .D8k {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,0 100,50 50,100 0,50" stroke="rgb(177,23,68)" stroke-width="4" fill="rgb(255,255,255)"/></svg>');
-        }
-
-        .D10 {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="0,33 50,0 100,33 100,67 50,100 0,67" fill="rgb(177,23,68)"/></svg>');
-        }
-
-        .D10k {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="0,33 50,0 100,33 100,67 50,100 0,67" fill="rgb(255,255,255)" stroke="rgb(177,23,68)" stroke-width="5"/></svg>');
-        }
-
-        .D12 {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="2,35 21,10 50,0 79,10 98,35 98,65 79,90 50,100 21,90 2,65" fill="rgb(177,23,68)"/></svg>');
-        }
-
-        .D12k {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="2,35 21,10 50,0 79,10 98,35 98,65 79,90 50,100 21,90 2,65" fill="rgb(255,255,255)" stroke="rgb(177,23,68)" stroke-width="5"/></svg>');
+            vertical-align: middle;
         }
 
         .license-footer {
@@ -211,28 +167,22 @@
                 <polygon points="0,13 100,13 50,100" />
                 <text x="50" y="50" font-size="50">4</text>
             </symbol>
-            <symbol id="D4-x" class="keep" viewbox="0 0 100 100">
-                <polygon points="0,13 100,13 50,100" />
-            </symbol>
             <symbol id="D4-2" class="keep" viewbox="0 0 100 100">
                 <polygon points="0,13 100,13 50,100" />
                 <text x="50" y="50" font-size="50">2</text>
             </symbol>
             <symbol id="D4-3" class="keep" viewbox="0 0 100 100">
-                <use href="#D4-x" />
+                <polygon points="0,13 100,13 50,100" />
                 <text x="50" y="50" font-size="50">3</text>
             </symbol>
             <symbol id="D4-4" class="keep" viewbox="0 0 100 100">
-                <use href="#D4-x" />
+                <polygon points="0,13 100,13 50,100" />
                 <text x="50" y="50" font-size="50">4</text>
             </symbol>
+
             <symbol id="D6" class="roll" viewbox="0 0 100 100">
                 <polygon points="13,13 87,13 87,87 13,87" />
                 <text x="50" y="50" font-size="50">6</text>
-            </symbol>
-            <symbol id="D6-1" class="keep" viewbox="0 0 100 100">
-                <polygon points="13,13 87,13 87,87 13,87" />
-                <text x="50" y="50" font-size="50">1</text>
             </symbol>
             <symbol id="D6-2" class="keep" viewbox="0 0 100 100">
                 <polygon points="13,13 87,13 87,87 13,87" />
@@ -254,17 +204,92 @@
                 <polygon points="13,13 87,13 87,87 13,87" />
                 <text x="50" y="50" font-size="50">6</text>
             </symbol>
+            <symbol id="D6-3U" class="unused" viewbox="0 0 100 100">
+                <polygon points="13,13 87,13 87,87 13,87" />
+                <text x="50" y="50" font-size="50">3</text>
+            </symbol>
+            <symbol id="D6-4U" class="unused" viewbox="0 0 100 100">
+                <polygon points="13,13 87,13 87,87 13,87" />
+                <text x="50" y="50" font-size="50">4</text>
+            </symbol>
+
             <symbol id="D8" class="roll" viewbox="0 0 100 100">
                 <polygon points="50,0 100,50 50,100 0,50" />
                 <text x="50" y="50" font-size="50">8</text>
             </symbol>
+            <symbol id="D8-1H" class="hitch" viewbox="0 0 100 100">
+                <polygon points="50,0 100,50 50,100 0,50" />
+                <text x="50" y="50" font-size="50">2</text>
+            </symbol>
+            <symbol id="D8-2" class="keep" viewbox="0 0 100 100">
+                <polygon points="50,0 100,50 50,100 0,50" />
+                <text x="50" y="50" font-size="50">2</text>
+            </symbol>
+            <symbol id="D8-3" class="keep" viewbox="0 0 100 100">
+                <polygon points="50,0 100,50 50,100 0,50" />
+                <text x="50" y="50" font-size="50">3</text>
+            </symbol>
+            <symbol id="D8-4" class="keep" viewbox="0 0 100 100">
+                <polygon points="50,0 100,50 50,100 0,50" />
+                <text x="50" y="50" font-size="50">4</text>
+            </symbol>
+            <symbol id="D8-5" class="keep" viewbox="0 0 100 100">
+                <polygon points="50,0 100,50 50,100 0,50" />
+                <text x="50" y="50" font-size="50">5</text>
+            </symbol>
+            <symbol id="D8-6" class="keep" viewbox="0 0 100 100">
+                <polygon points="50,0 100,50 50,100 0,50" />
+                <text x="50" y="50" font-size="50">6</text>
+            </symbol>
+            <symbol id="D8-7" class="keep" viewbox="0 0 100 100">
+                <polygon points="50,0 100,50 50,100 0,50" />
+                <text x="50" y="50" font-size="50">7</text>
+            </symbol>
+            <symbol id="D8-8" class="keep" viewbox="0 0 100 100">
+                <polygon points="50,0 100,50 50,100 0,50" />
+                <text x="50" y="50" font-size="50">8</text>
+            </symbol>
+
             <symbol id="D10" class="roll" viewbox="0 0 100 100">
                 <polygon points="0,33 50,0 100,33 100,67 50,100 0,67" />
                 <text x="50" y="50" font-size="50">10</text>
             </symbol>
+            <symbol id="D10-2" class="keep" viewbox="0 0 100 100">
+                <polygon points="0,33 50,0 100,33 100,67 50,100 0,67" />
+                <text x="50" y="50" font-size="50">2</text>
+            </symbol>
+            <symbol id="D10-5" class="keep" viewbox="0 0 100 100">
+                <polygon points="0,33 50,0 100,33 100,67 50,100 0,67" />
+                <text x="50" y="50" font-size="50">5</text>
+            </symbol>
+            <symbol id="D10-8" class="keep" viewbox="0 0 100 100">
+                <polygon points="0,33 50,0 100,33 100,67 50,100 0,67" />
+                <text x="50" y="50" font-size="50">8</text>
+            </symbol>
+            <symbol id="D10-9" class="keep" viewbox="0 0 100 100">
+                <polygon points="0,33 50,0 100,33 100,67 50,100 0,67" />
+                <text x="50" y="50" font-size="50">9</text>
+            </symbol>
+
             <symbol id="D12" class="roll" viewbox="0 0 100 100">
                 <polygon points="2,35 21,10 50,0 79,10 98,35 98,65 79,90 50,100 21,90 2,65" />
                 <text x="50" y="50" font-size="50">12</text>
+            </symbol>
+            <symbol id="D12-4" class="keep" viewbox="0 0 100 100">
+                <polygon points="2,35 21,10 50,0 79,10 98,35 98,65 79,90 50,100 21,90 2,65" />
+                <text x="50" y="50" font-size="50">4</text>
+            </symbol>
+            <symbol id="D12-8" class="keep" viewbox="0 0 100 100">
+                <polygon points="2,35 21,10 50,0 79,10 98,35 98,65 79,90 50,100 21,90 2,65" />
+                <text x="50" y="50" font-size="50">8</text>
+            </symbol>
+            <symbol id="D12-10" class="keep" viewbox="0 0 100 100">
+                <polygon points="2,35 21,10 50,0 79,10 98,35 98,65 79,90 50,100 21,90 2,65" />
+                <text x="50" y="50" font-size="50">10</text>
+            </symbol>
+            <symbol id="D12-11" class="keep" viewbox="0 0 100 100">
+                <polygon points="2,35 21,10 50,0 79,10 98,35 98,65 79,90 50,100 21,90 2,65" />
+                <text x="50" y="50" font-size="50">11</text>
             </symbol>
         </defs>
         <use href="#D4" />
@@ -293,8 +318,6 @@
     </ul>
 
     <h2>Dice</h2>
-
-    <img src="#D4" />
 
     <table class="dice-table">
         <tr>
@@ -336,8 +359,11 @@
             <td>&nbsp;<svg class="d">
                     <use href="#D8" />
                 </svg>&nbsp;</td>
-            <td><span class="D8k">2</span> <span class="D8k">7</span> <span class="D8k">3</span>
-                <span class="D8k">6</span>
+            <td>
+                <svg class="d"><use href="#D8-2" /></svg>
+                <svg class="d"><use href="#D8-7" /></svg>
+                <svg class="d"><use href="#D8-3" /></svg>
+                <svg class="d"><use href="#D8-6" /></svg>
             </td>
         </tr>
         <tr>
@@ -345,16 +371,22 @@
             <td>&nbsp;<svg class="d">
                     <use href="#D10" />
                 </svg>&nbsp;</td>
-            <td><span class="D10k">8</span> <span class="D10k">2</span> <span class="D10k">5</span> <span
-                    class="D10k">9</span></td>
+            <td>
+                <svg class="d"><use href="#D10-8" /></svg>
+                <svg class="d"><use href="#D10-2" /></svg>
+                <svg class="d"><use href="#D10-5" /></svg>
+                <svg class="d"><use href="#D10-9" /></svg>
         </tr>
         <tr>
             <td>12-sided</td>
             <td>&nbsp;<svg class="d">
                     <use href="#D12" />
                 </svg>&nbsp;</td>
-            <td><span class="D12k">8</span> <span class="D12k">10</span> <span class="D12k">4</span> <span
-                    class="D12k">11</span></td>
+            <td>
+                <svg class="d"><use href="#D12-8" /></svg>
+                <svg class="d"><use href="#D12-10" /></svg>
+                <svg class="d"><use href="#D12-4" /></svg>
+                <svg class="d"><use href="#D12-11" /></svg>
         </tr>
     </table>
 
@@ -389,14 +421,14 @@
     <ul>
         <li><b>Distinctions:</b>
             <ul>
-                <li><span class="trait">Dillettante dabbler in the diabolical</span> <span class="D8">D8</span></li>
+                <li><span class="trait">Dillettante dabbler in the diabolical</span> <svg class="d"><use href="#D8" /></svg></li>
             </ul>
         </li>
         <li><b>Attributes:</b>
             <ul>
-                <li><span class="trait">Physical</span> <span class="D6">D6</span></li>
-                <li><span class="trait">Mental</span> <span class="D8">D8</span></li>
-                <li><span class="trait">Social</span> <span class="D10">D10</span></li>
+                <li><span class="trait">Physical</span> <svg class="d"><use href="#D6" /></svg></li>
+                <li><span class="trait">Mental</span> <svg class="d"><use href="#D8" /></svg></li>
+                <li><span class="trait">Social</span> <svg class="d"><use href="#D10" /></svg></li>
             </ul>
         </li>
         <li><b>Plot points</b>: 1 <span class="PP">PP</span></li>
@@ -436,17 +468,17 @@
         <li>The gamemaster (GM) decides the difficulty of the task based on the situation, rolls, and totals the two
             dice.
             <ul>
-                <li>Easy is <span class="D6">D6</span> <span class="D6">D6</span></li>
-                <li>Challenging is <span class="D8">D8</span> <span class="D8">D8</span></li>
-                <li>Hard is <span class="D10">D10</span> <span class="D10">D10</span></li>
+                <li>Easy is <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D6" /></svg></li>
+                <li>Challenging is <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D8" /></svg></li>
+                <li>Hard is <svg class="d"><use href="#D10" /></svg> <svg class="d"><use href="#D10" /></svg></li>
             </ul>
         </li>
         <li>The player choose the <b>attribute</b> that fits the task and add two dice of that type to the pool. <span
                 class="note-regular">Regular <span class="rollkeep">Roll&Keep</span> games have at least two prime trait
                 sets, but this quick start only
                 has one, so add it to the dice pool twice.</span></li>
-        <li>If your <b>distinction</b> is relevant, add <span class="D8">D8</span> to the dice pool.</li>
-        <li>If you want, spend a <span class="PP">PP</span> to add a <span class="D6">D6</span> <b>asset</b> to the
+        <li>If your <b>distinction</b> is relevant, add <svg class="d"><use href="#D8" /></svg> to the dice pool.</li>
+        <li>If you want, spend a <span class="PP">PP</span> to add a <svg class="d"><use href="#D6" /></svg> <b>asset</b> to the
             pool.</li>
         <li>Roll your dice pool, and add together the two highest dice.</li>
         <li>If you exceed the GMs total describe how you succeed; otherwise the GM describes what happens instead.</li>
@@ -463,23 +495,25 @@
         secret
         headquarters, with a steel door between them and the ritual book they desperately need. Can they get in?</p>
     <p>The GM decides that the cult has not invested in security and that picking the lock on the door will be easy, so
-        they roll <span class="D6">D6</span> <span class="D6">D6</span>.</p>
+        they roll <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D6" /></svg>.</p>
     <table class="results-table">
         <tr>
-            <td>GM’s Roll<br><span class="D6-5">5 (D6)</span>, <span class="D6-3">3 (D6)</span></td>
+            <td>GM’s Roll<br><svg class="d"><use href="#D6-5" /></svg> <svg class="d"><use href="#D6-3" /></svg></td>
             <td>Player’s Roll</td>
         </tr>
     </table>
     <p>Dakota’s player decides picking the lock mostly using manual dexterity is a <span class="trait">Physical</span>
         test.</p>
     <p>They also argue that picking locks is exactly the sort of thing a <span class="trait">Dillettante dabbler in the
-            diabolical</span> will be good at, so they roll <span class="D6">D6</span> <span class="D6">D6</span> <span
-            class="D8">D8</span>.</p>
+            diabolical</span> will be good at, so they roll <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D8" /></svg>.</p>
     <table class="results-table">
         <tr>
-            <td>GM’s Roll<br><span class="D6-5">5 (D6)</span>, <span class="D6-3">3 (D6)</span></td>
-            <td>Player’s Roll<br><span class="D6-3 unused">3 (D6)</span>, <span class="D6-4">4 (D6)</span>, <span
-                    class="D8-6">6 (D8)</span></td>
+            <td>GM’s Roll<br><svg class="d"><use href="#D6-5" /></svg> <svg class="d"><use href="#D6-3" /></svg></td>
+            <td>Player’s Roll<br>
+                <svg class="d"><use href="#D6-3U" /></svg>
+                <svg class="d"><use href="#D6-4" /></svg>
+                <svg class="d"><use href="#D8-6" /></svg>
+            </td>
         </tr>
     </table>
     <p>Dakota’s player rolled a total of 10, which beats the GM's total of 8, so they succeed!</p>
@@ -491,21 +525,29 @@
     <p>Dakota has made his way to an Antarctic research facility. The buildings have been wrecked, and the occupants are
         missing. He wants to search the wreckage for clues.</p>
     <p>The GM already knows that searching will reveal the necessary next clues, but decides it is a challenging task
-        for Dakota to notices some important additional details and rolls <span class="D8">D8</span> <span
-            class="D8">D8</span>.</p>
+        for Dakota to notices some important additional details and rolls <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D8" /></svg>.</p>
     <table class="results-table">
         <tr>
-            <td>GM’s Roll<br><span class="D8-3">3 (D8)</span>, <span class="D8-6">6 (D8)</span></td>
+            <td>GM’s Roll<br>
+                <svg class="d"><use href="#D8-3" /></svg>
+                <svg class="d"><use href="#D8-6" /></svg>
+            </td>
             <td>Player’s Roll</td>
         </tr>
     </table>
     <p>Dakota’s player decides search in a <span class="trait">Mental</span> test, and argues a dabbler would also be
         good at searching.</p>
-    <p>The GM does not agree, so Dakota’s player can only roll <span class="D8">D8</span> <span class="D8">D8</span></p>
+    <p>The GM does not agree, so Dakota’s player can only roll <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D8" /></svg></p>
     <table class="results-table">
         <tr>
-            <td>GM’s Roll<br><span class="D8-3">3 (D8)</span>, <span class="D8-6">6 (D8)</span></td>
-            <td>Player’s Roll<br><span class="D8-1">1 (D8)</span>, <span class="D8-7">7 (D8)</span></td>
+            <td>GM’s Roll<br>
+                <svg class="d"><use href="#D8-3" /></svg>
+                <svg class="d"><use href="#D8-6" /></svg>
+            </td>
+            <td>Player’s Roll<br>
+                <svg class="d"><use href="#D8-1H" /></svg>
+                <svg class="d"><use href="#D8-7" /></svg>
+            </td>
         </tr>
     </table>
     <p>Dakota’s total does not beat the GM, so they fail, but because they rolled a <b>hitch</b> they gain 1 <span
@@ -521,24 +563,32 @@
         this
         thing on fire!” they announce.</p>
     <p>The GM decides that actually hitting the shoggoth is trivial, but how quickly can they find and
-        weaponize something flammable is a hard test so the GM rolls <span class="D10">D10</span> <span
-            class="D10">D10</span>.</p>
+        weaponize something flammable is a hard test so the GM rolls <svg class="d"><use href="#D10" /></svg> <svg class="d"><use href="#D10" /></svg>.</p>
     <table class="results-table">
         <tr>
-            <td>GM’s Roll<br><span class="D10-9">9 (D10)</span>, <span class="D10-2">9 (D10)</span></td>
+            <td>GM’s Roll<br>
+                <svg class="d"><use href="#D10-9" /></svg>
+                <svg class="d"><use href="#D10-2" /></svg>
+            </td>
             <td>Player’s Roll</td>
         </tr>
     </table>
     <p>Scrambling through the wreckage to find the neeed items is a <span class="trait">Physical</span> test, but
         Dakota’s player argues that their skill in the diabolical allows them to know exactly what will work, and they
         also spend a <span class="PP">PP</span> to find a stock of supplies.</p>
-    <p>Their final dice pool is <span class="D6">D6</span> <span class="D6">D6</span> <span class="D8">D8</span> <span
-            class="D6">D6</span>.</p>
+    <p>Their final dice pool is <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D6" /></svg>.</p>
     <table class="results-table">
         <tr>
-            <td>GM’s Roll<br><span class="D10-9">9 (D10)</span>, <span class="D10-2">9 (D10)</span></td>
-            <td>Player’s Roll<br><span class="D6-4 unused">4 (D6)</span>, <span class="D6-5">5 (D6)</span>, <span
-                    class="D8-7">7 (D8)</span>, <span class="D6-3 unused">3 (D6)</span></td>
+            <td>GM’s Roll<br>
+                <svg class="d"><use href="#D10-9" /></svg>
+                <svg class="d"><use href="#D10-2" /></svg>
+            </td>
+            <td>Player’s Roll<br>
+                <svg class="d"><use href="#D6-4U" /></svg>
+                <svg class="d"><use href="#D6-5" /></svg>
+                <svg class="d"><use href="#D8-7" /></svg>
+                <svg class="d"><use href="#D6-3U" /></svg>   
+            </td>
         </tr>
     </table>
     <p>Dakota’s result manages to just beat the GMs, so they succeed.</p>
