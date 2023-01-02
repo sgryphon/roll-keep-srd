@@ -54,13 +54,29 @@
             border: solid 1px #1b75bc;
         }
 
-        .PP {
-            font-weight: bold;
+        .pp {
+            width: 1.8em;
+            height: 1.8em;
+            display: inline-block;
+            vertical-align: middle;
         }
 
         .icon-defs {
             display: none;
         }
+
+        .d {
+            width: 1.8em;
+            height: 1.8em;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .license-footer {
+            font-family: 'URW Gothic';
+            font-size: 0.64rem;
+        }
+
 
         svg .roll polygon {
             stroke: rgb(27, 117, 188);
@@ -118,16 +134,18 @@
             font-weight: bold;
         }
 
-        .d {
-            width: 1.8em;
-            height: 1.8em;
-            display: inline-block;
-            vertical-align: middle;
+        svg .plot-point circle {
+            stroke: rgb(255, 234, 159);
+            stroke-width: 4;
+            fill: rgb(255, 234, 159);
         }
 
-        .license-footer {
+        svg .plot-point text {
+            fill: rgb(0, 0, 0);
+            text-anchor: middle;
+            dominant-baseline: central;
             font-family: 'URW Gothic';
-            font-size: 0.64rem;
+            font-weight: bold;
         }
 
         @media print {
@@ -291,8 +309,12 @@
                 <polygon points="2,35 21,10 50,0 79,10 98,35 98,65 79,90 50,100 21,90 2,65" />
                 <text x="50" y="50" font-size="50">11</text>
             </symbol>
+
+            <symbol id="PP" class="plot-point" viewbox="0 0 100 100">
+                <circle cx="50" cy="50" r="50" />
+                <text x="50" y="55" font-size="50">PP</text>
+            </symbol>
         </defs>
-        <use href="#D4" />
     </svg>
 
     <h2>Get Started!</h2>
@@ -412,7 +434,7 @@
                 values),
                 and several temporary trait sets (e.g. assets, complications).</span>
         </li>
-        <li><b>Plot Points.</b> You start the game with 1 <span class="PP">PP</span>.</li>
+        <li><b>Plot Points.</b> You start the game with 1 <svg class="pp"><use href="#PP" /></svg>.</li>
     </ul>
 
     <h3>Example Character</h3>
@@ -483,7 +505,7 @@
         <li>Roll your dice pool, and add together the two highest dice.</li>
         <li>If you exceed the GMs total describe how you succeed; otherwise the GM describes what happens instead.</li>
         <li>If you roll any ones, then these are called <b>hitches</b> and don't count in your total, but instead earn a
-            <span class="PP">PP</span>.
+            <svg class="pp"><use href="#PP" /></svg>.
         </li>
     </ol>
 
@@ -550,8 +572,7 @@
             </td>
         </tr>
     </table>
-    <p>Dakota’s total does not beat the GM, so they fail, but because they rolled a <b>hitch</b> they gain 1 <span
-            class="PP">PP</span>.</p>
+    <p>Dakota’s total does not beat the GM, so they fail, but because they rolled a <b>hitch</b> they gain 1 <svg class="pp"><use href="#PP" /></svg>.</p>
     <p>The GM describes finding the clues they were looking for, but they fail to notice the footprints in the snow,
         made by creatures walking on many thin, inhuman
         legs.</p>
@@ -575,7 +596,7 @@
     </table>
     <p>Scrambling through the wreckage to find the neeed items is a <span class="trait">Physical</span> test, but
         Dakota’s player argues that their skill in the diabolical allows them to know exactly what will work, and they
-        also spend a <span class="PP">PP</span> to find a stock of supplies.</p>
+        also spend a <svg class="pp"><use href="#PP" /></svg> to find a stock of supplies.</p>
     <p>Their final dice pool is <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D6" /></svg>.</p>
     <table class="results-table">
         <tr>
