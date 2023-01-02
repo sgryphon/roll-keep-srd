@@ -58,37 +58,115 @@
             font-weight: bold;
         }
 
-        .D4,
         .D6,
         .D8,
         .D10,
         .D12 {
+            text-align: center;
+            display: inline-block;
+            width: 1.8em;
+            height: 1.7em;
+            line-height: 1.8em;
+            padding-top: 0.1em;
+            color: #ffffff;
+            font-family: 'URW Gothic';
             font-weight: bold;
         }
 
-        .D4::after {}
+        .D4k,
+        .D6k,
+        .D8k,
+        .D10k,
+        .D12k {
+            text-align: center;
+            display: inline-block;
+            width: 1.8em;
+            height: 1.7em;
+            line-height: 1.8em;
+            padding-top: 0.1em;
+            color: #000000;
+            font-family: 'URW Gothic';
+            font-weight: bold;
+        }
 
-        .D4-1,
-        .D4-2,
-        .D4-3,
-        .D4-4,
-        .D6-1,
-        .D6-2,
-        .D6-3,
-        .D6-4,
-        .D6-5,
-        .D6-6,
-        .D8-1,
-        .D8-2,
-        .D8-3,
-        .D8-4,
-        .D8-5,
-        .D8-6,
-        .D8-7,
-        .D8-8,
-        .D10-1,
-        .D12-1 {
-            font-style: italic;
+        .icon-defs {
+            display: none;
+        }
+
+        svg .roll polygon {
+            stroke: rgb(177, 23, 68);
+            stroke-width: 4;
+            fill: rgb(177, 23, 68);
+        }
+
+        svg .roll text {
+            fill: rgb(255, 255, 255);
+            text-anchor: middle;
+            dominant-baseline: middle;
+            font-family: 'URW Gothic';
+            font-weight: bold;
+        }
+
+        svg .keep polygon {
+            stroke: rgb(177, 23, 68);
+            stroke-width: 4;
+            fill: rgb(255, 255, 255);
+        }
+
+        svg .keep text {
+            fill: rgb(0, 0, 0);
+            text-anchor: middle;
+            dominant-baseline: middle;
+            font-family: 'URW Gothic';
+            font-weight: bold;
+        }
+
+        .d {
+            width: 1.8em;
+            height: 1.8em;
+            display: inline-block;
+            position: relative;
+            bottom: -0.4em;
+        }
+
+        .xD4 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="0,13 100,13 50,100" stroke="rgb(177,23,68)" stroke-width="4" fill="rgb(177,23,68)"/></svg>');
+        }
+
+        .D4k {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="0,13 100,13 50,100" stroke="rgb(177,23,68)" stroke-width="4" fill="rgb(255,255,255)"/></svg>');
+        }
+
+        .D6 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="13,13 87,13 87,87 13,87" stroke="rgb(177,23,68)" stroke-width="4" fill="rgb(177,23,68)"/></svg>');
+        }
+
+        .D6k {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="13,13 87,13 87,87 13,87" stroke="rgb(177,23,68)" stroke-width="4" fill="rgb(255,255,255)"/></svg>');
+        }
+
+        .D8 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,0 100,50 50,100 0,50" stroke="rgb(177,23,68)" stroke-width="4" fill="rgb(177,23,68)"/></svg>');
+        }
+
+        .D8k {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,0 100,50 50,100 0,50" stroke="rgb(177,23,68)" stroke-width="4" fill="rgb(255,255,255)"/></svg>');
+        }
+
+        .D10 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="0,33 50,0 100,33 100,67 50,100 0,67" fill="rgb(177,23,68)"/></svg>');
+        }
+
+        .D10k {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="0,33 50,0 100,33 100,67 50,100 0,67" fill="rgb(255,255,255)" stroke="rgb(177,23,68)" stroke-width="5"/></svg>');
+        }
+
+        .D12 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="2,35 21,10 50,0 79,10 98,35 98,65 79,90 50,100 21,90 2,65" fill="rgb(177,23,68)"/></svg>');
+        }
+
+        .D12k {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="2,35 21,10 50,0 79,10 98,35 98,65 79,90 50,100 21,90 2,65" fill="rgb(255,255,255)" stroke="rgb(177,23,68)" stroke-width="5"/></svg>');
         }
 
         .license-footer {
@@ -99,12 +177,16 @@
         @media print {
             @page {
                 size: A4;
+
                 @bottom-right {
                     content: counter(page);
                 }
             }
-            
-            h1, h2, h3, h4 {
+
+            h1,
+            h2,
+            h3,
+            h4 {
                 page-break-after: avoid;
             }
 
@@ -122,6 +204,72 @@
 
 <body>
     <h1><span class="rollkeep">Roll&Keep</span> Quick Start</h1>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon-defs">
+        <defs>
+            <symbol id="D4" class="roll" viewbox="0 0 100 100">
+                <polygon points="0,13 100,13 50,100" />
+                <text x="50" y="50" font-size="50">4</text>
+            </symbol>
+            <symbol id="D4-x" class="keep" viewbox="0 0 100 100">
+                <polygon points="0,13 100,13 50,100" />
+            </symbol>
+            <symbol id="D4-2" class="keep" viewbox="0 0 100 100">
+                <polygon points="0,13 100,13 50,100" />
+                <text x="50" y="50" font-size="50">2</text>
+            </symbol>
+            <symbol id="D4-3" class="keep" viewbox="0 0 100 100">
+                <use href="#D4-x" />
+                <text x="50" y="50" font-size="50">3</text>
+            </symbol>
+            <symbol id="D4-4" class="keep" viewbox="0 0 100 100">
+                <use href="#D4-x" />
+                <text x="50" y="50" font-size="50">4</text>
+            </symbol>
+            <symbol id="D6" class="roll" viewbox="0 0 100 100">
+                <polygon points="13,13 87,13 87,87 13,87" />
+                <text x="50" y="50" font-size="50">6</text>
+            </symbol>
+            <symbol id="D6-1" class="keep" viewbox="0 0 100 100">
+                <polygon points="13,13 87,13 87,87 13,87" />
+                <text x="50" y="50" font-size="50">1</text>
+            </symbol>
+            <symbol id="D6-2" class="keep" viewbox="0 0 100 100">
+                <polygon points="13,13 87,13 87,87 13,87" />
+                <text x="50" y="50" font-size="50">2</text>
+            </symbol>
+            <symbol id="D6-3" class="keep" viewbox="0 0 100 100">
+                <polygon points="13,13 87,13 87,87 13,87" />
+                <text x="50" y="50" font-size="50">3</text>
+            </symbol>
+            <symbol id="D6-4" class="keep" viewbox="0 0 100 100">
+                <polygon points="13,13 87,13 87,87 13,87" />
+                <text x="50" y="50" font-size="50">4</text>
+            </symbol>
+            <symbol id="D6-5" class="keep" viewbox="0 0 100 100">
+                <polygon points="13,13 87,13 87,87 13,87" />
+                <text x="50" y="50" font-size="50">5</text>
+            </symbol>
+            <symbol id="D6-6" class="keep" viewbox="0 0 100 100">
+                <polygon points="13,13 87,13 87,87 13,87" />
+                <text x="50" y="50" font-size="50">6</text>
+            </symbol>
+            <symbol id="D8" class="roll" viewbox="0 0 100 100">
+                <polygon points="50,0 100,50 50,100 0,50" />
+                <text x="50" y="50" font-size="50">8</text>
+            </symbol>
+            <symbol id="D10" class="roll" viewbox="0 0 100 100">
+                <polygon points="0,33 50,0 100,33 100,67 50,100 0,67" />
+                <text x="50" y="50" font-size="50">10</text>
+            </symbol>
+            <symbol id="D12" class="roll" viewbox="0 0 100 100">
+                <polygon points="2,35 21,10 50,0 79,10 98,35 98,65 79,90 50,100 21,90 2,65" />
+                <text x="50" y="50" font-size="50">12</text>
+            </symbol>
+        </defs>
+        <use href="#D4" />
+    </svg>
+
     <h2>Get Started!</h2>
     <p>Remember those books where the teenage wizards struggle against the Dark Lord of Evil? That movie where the
         dwarves fight to recapture their mountain home from a dragon? That animated TV show about mystical knights and
@@ -146,6 +294,8 @@
 
     <h2>Dice</h2>
 
+    <img src="#D4" />
+
     <table class="dice-table">
         <tr>
             <th>Type</th>
@@ -153,44 +303,67 @@
             <th>Sample Results</th>
         </tr>
         <tr>
-            <td>4-sided</td>
-            <td><span class="D4">D4</span></td>
-            <td><span class="D4-2">2 (D4)</span>, <span class="D4-2">4 (D4)</span>, <span class="D4-3">3 (D4)</span>
+            <td>4-sided
             </td>
+            <td>&nbsp;<svg class="d">
+                    <use href="#D4" />
+                </svg>&nbsp;</td>
+            <td><svg class="d">
+                    <use href="#D4-2" />
+                </svg> <svg class="d">
+                    <use href="#D4-4" />
+                </svg> <svg class="d">
+                    <use href="#D4-3" />
+                </svg></td>
         </tr>
         <tr>
             <td>6-sided</td>
-            <td><span class="D6">D6</span></td>
-            <td><span class="D6-2">2 (D6)</span>, <span class="D6-4">4 (D6)</span>, <span class="D6-5">5 (D6)</span>,
-                <span class="D6-3">3 (D6)</span>
-            </td>
+            <td>&nbsp;<svg class="d">
+                    <use href="#D6" />
+                </svg>&nbsp;</td>
+            <td><svg class="d">
+                    <use href="#D6-2" />
+                </svg> <svg class="d">
+                    <use href="#D6-4" />
+                </svg> <svg class="d">
+                    <use href="#D6-5" />
+                </svg> <svg class="d">
+                    <use href="#D6-3" />
+                </svg></td>
         </tr>
         <tr>
             <td>8-sided</td>
-            <td><span class="D8">D8</span></td>
-            <td><span class="D8-2">2 (D8)</span>, <span class="D8-7">7 (D8)</span>, <span class="D8-3">3 (D8)</span>,
-                <span class="D8-6">6 (D8)</span>
+            <td>&nbsp;<svg class="d">
+                    <use href="#D8" />
+                </svg>&nbsp;</td>
+            <td><span class="D8k">2</span> <span class="D8k">7</span> <span class="D8k">3</span>
+                <span class="D8k">6</span>
             </td>
         </tr>
         <tr>
             <td>10-sided</td>
-            <td><span class="D10">D10</span></td>
-            <td><span class="D10-8">8 (D10)</span>, <span class="D10-2">2 (D10)</span>, <span class="D10-5">5
-                    (D10)</span>, <span class="D10-9">9 (D10)</span></td>
+            <td>&nbsp;<svg class="d">
+                    <use href="#D10" />
+                </svg>&nbsp;</td>
+            <td><span class="D10k">8</span> <span class="D10k">2</span> <span class="D10k">5</span> <span
+                    class="D10k">9</span></td>
         </tr>
         <tr>
             <td>12-sided</td>
-            <td><span class="D12">D12</span></td>
-            <td><span class="D12-8">8 (D12)</span>, <span class="D12-10">10 (D12)</span>, <span class="D12-4">4
-                    (D12)</span>, <span class="D12-11">11 (D12)</span></td>
+            <td>&nbsp;<svg class="d">
+                    <use href="#D12" />
+                </svg>&nbsp;</td>
+            <td><span class="D12k">8</span> <span class="D12k">10</span> <span class="D12k">4</span> <span
+                    class="D12k">11</span></td>
         </tr>
     </table>
 
     <h2>Create Your Character</h2>
     <ul>
         <li><b>Name and appearance.</b> Describe your character’s appearance and give them a name.</li>
-        <li><b>Distinction.</b> First, decide on your character’s <b>distinction</b> and assign it <span
-                class="D8">D8</span>.
+        <li><b>Distinction.</b> First, decide on your character’s <b>distinction</b> and assign it <svg class="d">
+            <use href="#D8" />
+        </svg>.
             This is a single phrase or sentence that neatly sums up your character, saying who you are, what you do,
             what your “deal” is. When you think about your <b>distinction</b>, try to think of two things: how this
             trait could
@@ -198,8 +371,7 @@
                 class="note-regular">Distinctions are the
                 universal trait set and regular <span class="rollkeep">Roll&Keep</span> games have three
                 distinctions.</span></li>
-        <li><b>Trait Sets.</b> This quick start has one trait set, <b>Attributes</b>: assign <span class="D6">D6</span>,
-            <span class="D8">D8</span>, <span class="D10">D10</span> between your <span class="trait">Physical</span>,
+        <li><b>Trait Sets.</b> This quick start has one trait set, <b>Attributes</b>: assign <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D10" /></svg> between your <span class="trait">Physical</span>,
             <span class="trait">Mental</span>, and
             <span class="trait">Social</span> attributes. <span class="note-regular">Regular <span
                     class="rollkeep">Roll&Keep</span> games have at
@@ -381,12 +553,14 @@
                 License</a>.</p>
         </p>
         <p>This work is based on Fate Core System, Fate Condensed Edition, and Fate Accelerated Edition (found at
-            <a href="http://www.faterpg.com/">http://www.faterpg.com/</a>), products of Evil Hat Productions, LLC, developed, authored, and edited by Leonard
+            <a href="http://www.faterpg.com/">http://www.faterpg.com/</a>), products of Evil Hat Productions, LLC,
+            developed, authored, and edited by Leonard
             Balsera, Brian Engard, Jeremy Keller, Ryan Macklin, Mike Olson, Clark Valentine, Amanda Valentine, Fred
             Hicks,
             Rob Donoghue, PK Sullivan, Lara Turner, Richard Bellingham, Robert Hanz, and Sophie Lagacé, and licensed for
             our use under the Creative Commons Attribution 3.0 Unported license
-            (<a href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a>).</p>
+            (<a href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a>).
+        </p>
     </div>
 </body>
 
