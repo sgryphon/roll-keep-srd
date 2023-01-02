@@ -53,7 +53,7 @@
         }
 
         .results-table td {
-            width: 14em;
+            width: 10em;
             vertical-align: top;
             text-align: center;
             padding: 0.5em;
@@ -78,6 +78,13 @@
             margin-top: 1em;
             margin-left: 1em;
             border: solid 5px #ffea9f;
+        }
+
+        .roll-sidebar {
+            clear: both;
+            float: right;
+            margin-bottom: 1em;
+            margin-left: 1em;
         }
 
         .example-situations {
@@ -187,6 +194,10 @@
                 }
             }
 
+            body {
+                font-size: 80%;
+            }
+
             h1,
             h2,
             h3,
@@ -194,13 +205,17 @@
                 page-break-after: avoid;
             }
 
+            table {
+                page-break-before: avoid;
+                page-break-inside: avoid;
+            }
+
             .example-situations {
                 page-break-before: always;
             }
 
-            table {
-                page-break-before: avoid;
-                page-break-inside: avoid;
+            .results-table td {
+                width: 9em;
             }
         }
     </style>
@@ -496,36 +511,38 @@
         </li>
     </ol>
 
-
-
     <h2 class="example-situations">Example Situations</h2>
 
     <h3>The Safe</h3>
     <p>Dakota isn’t an adept safe-cracker, and yet they’re in a sinister cult’s guarded
         secret
         headquarters, with a steel door between them and the book they desperately need. Can they get in?</p>
-    <p>The GM decides that the cult has not invested in security and that picking the lock will be easy, so
-        they roll <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D6" /></svg>.</p>
-    <table class="results-table">
-        <tr>
-            <td>GM’s Roll<br><svg class="d"><use href="#D6-5" /></svg> <svg class="d"><use href="#D6-3" /></svg></td>
-            <td>Player’s Roll</td>
-        </tr>
-    </table>
-    <p>Dakota’s player decides this uses manual dexterity andis a <span class="trait">Physical</span>
-        test.</p>
-    <p>They also argue that picking locks is exactly what a <span class="trait">Dillettante dabbler in the
-            diabolical</span> will know, so they roll <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D8" /></svg>.</p>
-    <table class="results-table">
-        <tr>
-            <td>GM’s Roll<br><svg class="d"><use href="#D6-5" /></svg> <svg class="d"><use href="#D6-3" /></svg></td>
-            <td>Player’s Roll<br>
-                <svg class="d"><use href="#D6-3U" /></svg>
-                <svg class="d"><use href="#D6-4" /></svg>
-                <svg class="d"><use href="#D8-6" /></svg>
-            </td>
-        </tr>
-    </table>
+    <div class="roll-sidebar">
+        <table class="results-table">
+            <tr>
+                <td>GM’s Roll<br><svg class="d"><use href="#D6-5" /></svg> <svg class="d"><use href="#D6-3" /></svg></td>
+                <td>Player’s Roll</td>
+            </tr>
+        </table>
+    </div>
+    <p>The GM decides that the cult has not invested in security and that picking the lock will be easy, and roll <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D6" /></svg>.</p>
+
+        <p>Dakota’s player decides this uses manual dexterity andis a <span class="trait">Physical</span>
+            test.</p>
+        <div class="roll-sidebar">
+        <table class="results-table">
+            <tr>
+                <td>GM’s Roll<br><svg class="d"><use href="#D6-5" /></svg> <svg class="d"><use href="#D6-3" /></svg></td>
+                <td>Player’s Roll<br>
+                    <svg class="d"><use href="#D6-3U" /></svg>
+                    <svg class="d"><use href="#D6-4" /></svg>
+                    <svg class="d"><use href="#D8-6" /></svg>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <p>They also argue that picking locks is exactly what a <span class="trait">Dillettante</span> will know, so they roll <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D8" /></svg>.</p>
     <p>Dakota’s player rolled a total of 10, which beats the GM's total of 8, so they succeed!</p>
     <p>Dakota is able to crack the safe and finds the book contains scribbled notes about a secret
         facility.</p>
@@ -534,9 +551,8 @@
 
     <p>Dakota has made his way to an Antarctic research facility. The buildings have been wrecked, and the occupants are
         missing. He wants to search the wreckage for clues.</p>
-    <p>The GM decides it is a challenging task
-        to notices some important additional details and rolls <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D8" /></svg>.</p>
-    <table class="results-table">
+        <div class="roll-sidebar">
+            <table class="results-table">
         <tr>
             <td>GM’s Roll<br>
                 <svg class="d"><use href="#D8-3" /></svg>
@@ -545,10 +561,13 @@
             <td>Player’s Roll</td>
         </tr>
     </table>
-    <p>Dakota’s player decides search in a <span class="trait">Mental</span> test, and argues a dabbler would also be
+</div>
+<p>The GM decides it is a challenging task
+    to notices some important additional details and rolls <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D8" /></svg>.</p>
+<p>Dakota’s player decides search in a <span class="trait">Mental</span> test, and argues a dabbler would also be
         good at searching.</p>
-    <p>The GM does not agree, so Dakota’s player only rolls <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D8" /></svg>.</p>
-    <table class="results-table">
+    <div class="roll-sidebar">
+        <table class="results-table">
         <tr>
             <td>GM’s Roll<br>
                 <svg class="d"><use href="#D8-3" /></svg>
@@ -560,7 +579,9 @@
             </td>
         </tr>
     </table>
-    <p>Dakota’s total does not beat the GM, so they fail, but because they rolled a <b>hitch</b> they gain 1 <svg class="pp"><use href="#PP" /></svg>.</p>
+</div>
+<p>The GM does not agree, so Dakota’s player only rolls <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D8" /></svg>.</p>
+<p>Dakota’s total does not beat the GM, so they fail, but because they rolled a <b>hitch</b> they gain 1 <svg class="pp"><use href="#PP" /></svg>.</p>
     <p>The GM describes finding the clues they were looking for, but they fail to notice the footprints in the snow,
         made by creatures walking on many thin, inhuman
         legs.</p>
@@ -570,9 +591,8 @@
     <p>Dakota is face-to-something with a shoggoth, a massive and tireless fleshy beast, and decides their best bet is to distract it: “I’d like to make a Molotov cocktail and set
         this
         thing on fire!”.</p>
-    <p>The GM decides that quickly find and
-        weaponize something flammable is a hard test so the GM rolls <svg class="d"><use href="#D10" /></svg> <svg class="d"><use href="#D10" /></svg>.</p>
-    <table class="results-table">
+        <div class="roll-sidebar">
+            <table class="results-table">
         <tr>
             <td>GM’s Roll<br>
                 <svg class="d"><use href="#D10-9" /></svg>
@@ -581,11 +601,14 @@
             <td>Player’s Roll</td>
         </tr>
     </table>
-    <p>Scrambling through the wreckage to find the neeed items is a <span class="trait">Physical</span> test, but
-        Dakota’s player argues that their skill in the diabolical allows them to know exactly what will work, and they
+</div>
+<p>The GM decides that quickly find and
+    weaponize something flammable is a hard test so the GM rolls <svg class="d"><use href="#D10" /></svg> <svg class="d"><use href="#D10" /></svg>.</p>
+<p>Scrambling through the wreckage to find the neeed items is a <span class="trait">Physical</span> test, but
+        Dakota’s player argues that their skill in the <span class="trait">diabolical</span> allows them to know exactly what will work, and they
         also spend a <svg class="pp"><use href="#PP" /></svg> to find a stock of supplies.</p>
-    <p>Their final dice pool is <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D6" /></svg>.</p>
-    <table class="results-table">
+    <div class="roll-sidebar">
+        <table class="results-table">
         <tr>
             <td>GM’s Roll<br>
                 <svg class="d"><use href="#D10-9" /></svg>
@@ -599,6 +622,8 @@
             </td>
         </tr>
     </table>
+    </div>
+    <p>Their final dice pool is <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D6" /></svg>.</p>
     <p>Dakota’s result manages to just beat the GMs, so they succeed.</p>
     <p>Dakota cobbles together the Molotov and tosses it at the beast. The shoggoth is now on fire and distracted enough
         to let Dakota get away.</p>
