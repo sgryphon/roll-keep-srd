@@ -1,0 +1,393 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'URW Bookman';
+        }
+
+        h1 {
+            font-family: 'URW Gothic';
+            font-weight: 100;
+        }
+
+        h2 {
+            font-family: 'URW Gothic';
+            color: #b11744;
+        }
+
+        h4 {
+            color: #b11744;
+        }
+
+        .rollkeep {
+            font-family: 'URW Gothic';
+            font-weight: 700;
+        }
+
+        .trait {
+            font-variant: small-caps;
+        }
+
+        .dice-table {
+            border-spacing: 0;
+            font-family: 'URW Gothic';
+            font-weight: 100;
+        }
+
+        .dice-table td {
+            padding: 0.5em;
+            border: solid 1px #b11744;
+        }
+
+        .results-table {
+            border-spacing: 0;
+            font-family: 'URW Gothic';
+            font-weight: 500;
+        }
+
+        .results-table td {
+            width: 14em;
+            vertical-align: top;
+            text-align: center;
+            padding: 0.5em;
+            border: solid 1px #b11744;
+        }
+
+        .PP {
+            font-weight: bold;
+        }
+
+        .D4,
+        .D6,
+        .D8,
+        .D10,
+        .D12 {
+            font-weight: bold;
+        }
+
+        .D4::after {}
+
+        .D4-1,
+        .D4-2,
+        .D4-3,
+        .D4-4,
+        .D6-1,
+        .D6-2,
+        .D6-3,
+        .D6-4,
+        .D6-5,
+        .D6-6,
+        .D8-1,
+        .D8-2,
+        .D8-3,
+        .D8-4,
+        .D8-5,
+        .D8-6,
+        .D8-7,
+        .D8-8,
+        .D10-1,
+        .D12-1 {
+            font-style: italic;
+        }
+
+        .license-footer {
+            font-family: 'URW Gothic';
+            font-size: 0.64rem;
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                @bottom-right {
+                    content: counter(page);
+                }
+            }
+            
+            h1, h2, h3, h4 {
+                page-break-after: avoid;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+
+            table {
+                page-break-before: avoid;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1><span class="rollkeep">Roll&Keep</span> Quick Start</h1>
+    <h2>Get Started!</h2>
+    <p>Remember those books where the teenage wizards struggle against the Dark Lord of Evil? That movie where the
+        dwarves fight to recapture their mountain home from a dragon? That animated TV show about mystical knights and
+        their army of clones righting wrongs across the galaxy?</p>
+    <p>Aren’t those awesome? Here’s your chance to put yourself in the heroes’ shoes in stories like those.</p>
+
+    <p><span class="rollkeep">Roll&Keep</span> is a tabletop roleplaying game, where you and your friends gather around
+        and tell stories full of danger, excitement, and adventure. You might have played games similar to this
+        before—Dungeons & Dragons is a very popular one—but don’t worry if you haven’t; this quick start will guide you
+        through the basics.</p>
+
+    <p>Here’s what you’ll need to play:</p>
+
+    <ul>
+        <li>A few friends. One of you will be the gamemaster, the others players.</li>
+        <li>Polyhedral dice with different numbers of sides, a few of each. You can buy these dice at a gaming store or
+            online.</li>
+        <li>Paper to use for characters sheets and notes, a few sheets for each player.</li>
+        <li>Index cards or sticky notes or similar slips of paper.</li>
+        <li>Tokens for <b>plot points</b>. These can be poker chips, beads, pennies, or anything similar.</li>
+    </ul>
+
+    <h2>Dice</h2>
+
+    <table class="dice-table">
+        <tr>
+            <th>Type</th>
+            <th>Symbol</th>
+            <th>Sample Results</th>
+        </tr>
+        <tr>
+            <td>4-sided</td>
+            <td><span class="D4">D4</span></td>
+            <td><span class="D4-2">2 (D4)</span>, <span class="D4-2">4 (D4)</span>, <span class="D4-3">3 (D4)</span>
+            </td>
+        </tr>
+        <tr>
+            <td>6-sided</td>
+            <td><span class="D6">D6</span></td>
+            <td><span class="D6-2">2 (D6)</span>, <span class="D6-4">4 (D6)</span>, <span class="D6-5">5 (D6)</span>,
+                <span class="D6-3">3 (D6)</span>
+            </td>
+        </tr>
+        <tr>
+            <td>8-sided</td>
+            <td><span class="D8">D8</span></td>
+            <td><span class="D8-2">2 (D8)</span>, <span class="D8-7">7 (D8)</span>, <span class="D8-3">3 (D8)</span>,
+                <span class="D8-6">6 (D8)</span>
+            </td>
+        </tr>
+        <tr>
+            <td>10-sided</td>
+            <td><span class="D10">D10</span></td>
+            <td><span class="D10-8">8 (D10)</span>, <span class="D10-2">2 (D10)</span>, <span class="D10-5">5
+                    (D10)</span>, <span class="D10-9">9 (D10)</span></td>
+        </tr>
+        <tr>
+            <td>12-sided</td>
+            <td><span class="D12">D12</span></td>
+            <td><span class="D12-8">8 (D12)</span>, <span class="D12-10">10 (D12)</span>, <span class="D12-4">4
+                    (D12)</span>, <span class="D12-11">11 (D12)</span></td>
+        </tr>
+    </table>
+
+    <h2>Create Your Character</h2>
+    <ul>
+        <li><b>Name and appearance.</b> Describe your character’s appearance and give them a name.</li>
+        <li><b>Distinction.</b> First, decide on your character’s <b>distinction</b> and assign it <span
+                class="D8">D8</span>.
+            This is a single phrase or sentence that neatly sums up your character, saying who you are, what you do,
+            what your “deal” is. When you think about your <b>distinction</b>, try to think of two things: how this
+            trait could
+            help you, and how it might make things harder for you. Good <b>distinction</b> traits do both. <span
+                class="note-regular">Distinctions are the
+                universal trait set and regular <span class="rollkeep">Roll&Keep</span> games have three
+                distinctions.</span></li>
+        <li><b>Trait Sets.</b> This quick start has one trait set, <b>Attributes</b>: assign <span class="D6">D6</span>,
+            <span class="D8">D8</span>, <span class="D10">D10</span> between your <span class="trait">Physical</span>,
+            <span class="trait">Mental</span>, and
+            <span class="trait">Social</span> attributes. <span class="note-regular">Regular <span
+                    class="rollkeep">Roll&Keep</span> games have at
+                least two prime
+                trait sets, of varying types (e.g. attributes, skills, affiliations, relationships, powers, roles,
+                values),
+                and several temporary trait sets (e.g. assets, complications).</span>
+        </li>
+        <li><b>Plot Points.</b> You start the game with 1 <span class="PP">PP</span>.</li>
+    </ul>
+
+    <h3>Example Character</h3>
+
+    <h4>Dakota DeFalt</h4>
+    <ul>
+        <li><b>Distinctions:</b>
+            <ul>
+                <li><span class="trait">Dillettante dabbler in the diabolical</span> <span class="D8">D8</span></li>
+            </ul>
+        </li>
+        <li><b>Attributes:</b>
+            <ul>
+                <li><span class="trait">Physical</span> <span class="D6">D6</span></li>
+                <li><span class="trait">Mental</span> <span class="D8">D8</span></li>
+                <li><span class="trait">Social</span> <span class="D10">D10</span></li>
+            </ul>
+        </li>
+        <li><b>Plot points</b>: 1 <span class="PP">PP</span></li>
+    </ul>
+
+    <h2>Taking Action, Rolling the Dice</h2>
+    <p>In a game of <span class="rollkeep">Roll&Keep</span>, you will control the actions of the character you created,
+        contributing to the story you are all telling together. In general, the GM will narrate the world and the
+        actions of non-player characters (NPCs), and the other players will narrate their individual PCs’ actions.</h2>
+
+    <p>To act, follow the principle of fiction first: say what your character is trying to do, then figure out how
+        you’ll do that in the system. Your character’s Distination and Attributes inform what they can attempt and help
+        set the context for interpreting the results. Most people couldn’t even try to perform emergency surgery on a
+        disemboweled ally, but with a Distinction establishing a medical background, you can try. Without that
+        Distinction you might at best buy a few moments for some last words. When in doubt, check with your GM and the
+        table.</p>
+
+    <p>How do you know if you’re successful? Often, your character will simply succeed, because the action isn’t hard
+        and nobody’s trying to stop you. But in difficult or unpredictable situations, you’ll break out the dice to find
+        out what happens.</p>
+
+    <p>When a character wants to take an action, the group should think about these questions:</p>
+
+    <ul>
+        <li>What’s stopping this from happening?</li>
+        <li>What could go wrong?</li>
+        <li>How is it interesting when it does go wrong?</li>
+    </ul>
+
+    <p>If no one has good answers to all of these questions, it simply happens. Driving to the airport doesn’t require a
+        roll of the dice. Racing down the highway to a waiting plane while being pursued by cybernetically enhanced
+        beasts from another world, on the other hand, is a perfect time to roll the dice.</p>
+
+    <p>Whenever you take action, follow these steps:</p>
+
+    <ol>
+        <li>The gamemaster (GM) decides the difficulty of the task based on the situation, rolls, and totals the two
+            dice.
+            <ul>
+                <li>Easy is <span class="D6">D6</span> <span class="D6">D6</span></li>
+                <li>Challenging is <span class="D8">D8</span> <span class="D8">D8</span></li>
+                <li>Hard is <span class="D10">D10</span> <span class="D10">D10</span></li>
+            </ul>
+        </li>
+        <li>The player choose the <b>attribute</b> that fits the task and add two dice of that type to the pool. <span
+                class="note-regular">Regular <span class="rollkeep">Roll&Keep</span> games have at least two prime trait
+                sets, but this quick start only
+                has one, so add it to the dice pool twice.</span></li>
+        <li>If your <b>distinction</b> is relevant, add <span class="D8">D8</span> to the dice pool.</li>
+        <li>If you want, spend a <span class="PP">PP</span> to add a <span class="D6">D6</span> <b>asset</b> to the
+            pool.</li>
+        <li>Roll your dice pool, and add together the two highest dice.</li>
+        <li>If you exceed the GMs total describe how you succeed; otherwise the GM describes what happens instead.</li>
+        <li>If you roll any ones, then these are called <b>hitches</b> and don't count in your total, but instead earn a
+            <span class="PP">PP</span>.
+        </li>
+    </ol>
+
+
+    <h2 class="page-break">Example Situations</h2>
+
+    <h3>The Safe</h3>
+    <p>Dakota isn’t an adept safe-cracker (though they have the tools), and yet they’re in a sinister cult’s guarded
+        secret
+        headquarters, with a steel door between them and the ritual book they desperately need. Can they get in?</p>
+    <p>The GM decides that the cult has not invested in security and that picking the lock on the door will be easy, so
+        they roll <span class="D6">D6</span> <span class="D6">D6</span>.</p>
+    <table class="results-table">
+        <tr>
+            <td>GM’s Roll<br><span class="D6-5">5 (D6)</span>, <span class="D6-3">3 (D6)</span></td>
+            <td>Player’s Roll</td>
+        </tr>
+    </table>
+    <p>Dakota’s player decides picking the lock mostly using manual dexterity is a <span class="trait">Physical</span>
+        test.</p>
+    <p>They also argue that picking locks is exactly the sort of thing a <span class="trait">Dillettante dabbler in the
+            diabolical</span> will be good at, so they roll <span class="D6">D6</span> <span class="D6">D6</span> <span
+            class="D8">D8</span>.</p>
+    <table class="results-table">
+        <tr>
+            <td>GM’s Roll<br><span class="D6-5">5 (D6)</span>, <span class="D6-3">3 (D6)</span></td>
+            <td>Player’s Roll<br><span class="D6-3 unused">3 (D6)</span>, <span class="D6-4">4 (D6)</span>, <span
+                    class="D8-6">6 (D8)</span></td>
+        </tr>
+    </table>
+    <p>Dakota’s player rolled a total of 10, which beats the GM's total of 8, so they succeed!</p>
+    <p>Dakota is able to crack the safe and finds the ritual book contains scribbled notes about a secret Antarctic
+        facility.</p>
+
+    <h3>The Facility</h3>
+
+    <p>Dakota has made his way to an Antarctic research facility. The buildings have been wrecked, and the occupants are
+        missing. He wants to search the wreckage for clues.</p>
+    <p>The GM already knows that searching will reveal the necessary next clues, but decides it is a challenging task
+        for Dakota to notices some important additional details and rolls <span class="D8">D8</span> <span
+            class="D8">D8</span>.</p>
+    <table class="results-table">
+        <tr>
+            <td>GM’s Roll<br><span class="D8-3">3 (D8)</span>, <span class="D8-6">6 (D8)</span></td>
+            <td>Player’s Roll</td>
+        </tr>
+    </table>
+    <p>Dakota’s player decides search in a <span class="trait">Mental</span> test, and argues a dabbler would also be
+        good at searching.</p>
+    <p>The GM does not agree, so Dakota’s player can only roll <span class="D8">D8</span> <span class="D8">D8</span></p>
+    <table class="results-table">
+        <tr>
+            <td>GM’s Roll<br><span class="D8-3">3 (D8)</span>, <span class="D8-6">6 (D8)</span></td>
+            <td>Player’s Roll<br><span class="D8-1">1 (D8)</span>, <span class="D8-7">7 (D8)</span></td>
+        </tr>
+    </table>
+    <p>Dakota’s total does not beat the GM, so they fail, but because they rolled a <b>hitch</b> they gain 1 <span
+            class="PP">PP</span>.</p>
+    <p>The GM describes finding the clues they were looking for, but they fail to notice the footprints in the snow,
+        made by creatures walking on many thin, inhuman
+        legs.</p>
+
+    <h3>The Creature</h3>
+
+    <p>Dakota is face-to-something with a shoggoth, a massive and tireless fleshy beast. They know it’s too powerful to
+        attack directly, so they decides their best bet is to distract it: “I’d like to make a Molotov cocktail and set
+        this
+        thing on fire!” they announce.</p>
+    <p>The GM decides that actually hitting the shoggoth is trivial, but how quickly can they find and
+        weaponize something flammable is a hard test so the GM rolls <span class="D10">D10</span> <span
+            class="D10">D10</span>.</p>
+    <table class="results-table">
+        <tr>
+            <td>GM’s Roll<br><span class="D10-9">9 (D10)</span>, <span class="D10-2">9 (D10)</span></td>
+            <td>Player’s Roll</td>
+        </tr>
+    </table>
+    <p>Scrambling through the wreckage to find the neeed items is a <span class="trait">Physical</span> test, but
+        Dakota’s player argues that their skill in the diabolical allows them to know exactly what will work, and they
+        also spend a <span class="PP">PP</span> to find a stock of supplies.</p>
+    <p>Their final dice pool is <span class="D6">D6</span> <span class="D6">D6</span> <span class="D8">D8</span> <span
+            class="D6">D6</span>.</p>
+    <table class="results-table">
+        <tr>
+            <td>GM’s Roll<br><span class="D10-9">9 (D10)</span>, <span class="D10-2">9 (D10)</span></td>
+            <td>Player’s Roll<br><span class="D6-4 unused">4 (D6)</span>, <span class="D6-5">5 (D6)</span>, <span
+                    class="D8-7">7 (D8)</span>, <span class="D6-3 unused">3 (D6)</span></td>
+        </tr>
+    </table>
+    <p>Dakota’s result manages to just beat the GMs, so they succeed.</p>
+    <p>Dakota cobbles together the Molotov and tosses it at the beast. The shoggoth is now on fire and distracted enough
+        to let Dakota get away.</p>
+    <hr>
+    <div class="license-footer">
+        <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
+                    style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+        <p>© Sly Gryphon, version 2023.01.02. This work is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International
+                License</a>.</p>
+        </p>
+        <p>This work is based on Fate Core System, Fate Condensed Edition, and Fate Accelerated Edition (found at
+            <a href="http://www.faterpg.com/">http://www.faterpg.com/</a>), products of Evil Hat Productions, LLC, developed, authored, and edited by Leonard
+            Balsera, Brian Engard, Jeremy Keller, Ryan Macklin, Mike Olson, Clark Valentine, Amanda Valentine, Fred
+            Hicks,
+            Rob Donoghue, PK Sullivan, Lara Turner, Richard Bellingham, Robert Hanz, and Sophie Lagacé, and licensed for
+            our use under the Creative Commons Attribution 3.0 Unported license
+            (<a href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a>).</p>
+    </div>
+</body>
+
+</html>
