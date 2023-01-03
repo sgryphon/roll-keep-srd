@@ -65,18 +65,24 @@
         }
 
         .example-character {
+            width: 11em;
             float: right;
-            padding: 1em;
+            padding-left: 1em;
+            padding-right: 1em;
             margin-left: 1em;
+            margin-bottom: 1em;
             border: solid 5px #ffea9f;
+            background: #ffea9f;
         }
 
         .dice-sidebar {
             clear: both;
             float: right;
-            padding: 1em;
-            margin-top: 1em;
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-bottom: 0.5em;
             margin-left: 1em;
+            margin-bottom: 1em;
             border: solid 5px #ffea9f;
         }
 
@@ -109,11 +115,14 @@
             vertical-align: middle;
         }
 
+        .license-page1 {
+            display: none;
+        }
+
         .license-footer {
             font-family: 'URW Gothic';
             font-size: 0.64rem;
         }
-
 
         svg .roll polygon {
             stroke: rgb(27, 117, 188);
@@ -214,9 +223,32 @@
                 page-break-before: always;
             }
 
+            .dice-table {
+                font-size: 0.9em;
+            }
+
             .results-table td {
                 width: 9em;
             }
+
+            .license-page1 {
+                display: block;
+                font-family: 'URW Gothic';
+                font-size: 0.51rem;
+                margin-top: 4em;
+            }
+
+            .license-page1 .cc-logo {
+                float: left;
+                margin-top: 0;
+                margin-right: 1em;
+                margin-bottom: 3em;
+            }
+
+            .license-footer {
+                display: none;
+            }
+
         }
     </style>
 </head>
@@ -362,13 +394,10 @@
         </defs>
     </svg>
 
-    <h2>Get Started!</h2>
     <p>This is a tabletop roleplaying game, where you and your friends gather around
         and tell stories full of danger, excitement, and adventure. You might have played games similar to this
         before—Dungeons & Dragons is a very popular one—but don’t worry if you haven’t; this quick start will guide you
         through the core of the system.</p>
-
-    <h2>Create Your Character</h2>
 
     <div class="example-character">
         <p>Sample character:</p>
@@ -384,15 +413,17 @@
         <p><b>Plot points:</b> 1 <svg class="pp"><use href="#PP" /></svg></p>
     </div>
 
+    <h2>Create Your Character</h2>
+
     <p>First, decide on your character’s <b>distinction</b> trait (e.g. “<span class="trait">Dillettante dabbler in the diabolical</span>”), a single phrase or sentence that neatly sums up your character. Write it down and assign it <svg class="d">
             <use href="#D8" />
         </svg>. <span
                 class="note-regular">Characters usually have three distinctions; this quick start has only one.</span></p>
 
-    <p>Prioritise your <span class="trait">Physical</span>,
+    <p>Prioritise <span class="trait">Physical</span>,
         <span class="trait">Mental</span>, and
         <span class="trait">Social</span> attributes, rating them <svg class="d"><use href="#D10" /></svg>, <svg class="d"><use href="#D8" /></svg>,
-        and <svg class="d"><use href="#D6" /></svg>. This is their attributes <b>trait set</b>.
+        and <svg class="d"><use href="#D6" /></svg>. This is the character’s attributes <b>trait set</b>.
         <span class="note-regular">Other games will have <u>different</u> trait sets (such as values, skills, or power sets), and more (usually at least two).</span>
     </p>
 
@@ -488,7 +519,7 @@
         </div>
 
     <ol>
-        <li>The gamemaster (GM) decides the difficulty of the task.
+        <li>The gamemaster (GM) decides the difficulty:
             <ul>
                 <li>Easy is <svg class="d"><use href="#D6" /></svg> <svg class="d"><use href="#D6" /></svg></li>
                 <li>Challenging is <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D8" /></svg></li>
@@ -510,6 +541,25 @@
         </ul>
         </li>
     </ol>
+
+    <div class="license-page1">
+        <hr/>
+        <p class="cc-logo"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
+                    style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+        <p>© Sly Gryphon, version 2023.01.02. This work is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International
+                License</a>.</p>
+        </p>
+        <p>This work is based on Fate Core System, Fate Condensed Edition, and Fate Accelerated Edition (found at
+            <a href="http://www.faterpg.com/">http://www.faterpg.com/</a>), products of Evil Hat Productions, LLC,
+            developed, authored, and edited by Leonard
+            Balsera, Brian Engard, Jeremy Keller, Ryan Macklin, Mike Olson, Clark Valentine, Amanda Valentine, Fred
+            Hicks,
+            Rob Donoghue, PK Sullivan, Lara Turner, Richard Bellingham, Robert Hanz, and Sophie Lagacé, and licensed for
+            our use under the Creative Commons Attribution 3.0 Unported license
+            (<a href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a>).
+        </p>
+    </div>
 
     <h2 class="example-situations">Example Situations</h2>
 
@@ -580,7 +630,7 @@
         </tr>
     </table>
 </div>
-<p>The GM does not agree, so Dakota’s player only rolls <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D8" /></svg>.</p>
+<p>The GM does not agree, so the player only rolls <svg class="d"><use href="#D8" /></svg> <svg class="d"><use href="#D8" /></svg>.</p>
 <p>Dakota’s total does not beat the GM, so they fail, but because they rolled a <b>hitch</b> they gain 1 <svg class="pp"><use href="#PP" /></svg>.</p>
     <p>The GM describes finding the clues they were looking for, but they fail to notice the footprints in the snow,
         made by creatures walking on many thin, inhuman
@@ -602,8 +652,8 @@
         </tr>
     </table>
 </div>
-<p>The GM decides that quickly find and
-    weaponize something flammable is a hard test so the GM rolls <svg class="d"><use href="#D10" /></svg> <svg class="d"><use href="#D10" /></svg>.</p>
+<p>The GM decides that quickly finding and
+    weaponize something flammable is a hard test so rolls <svg class="d"><use href="#D10" /></svg> <svg class="d"><use href="#D10" /></svg>.</p>
 <p>Scrambling through the wreckage to find the neeed items is a <span class="trait">Physical</span> test, but
         Dakota’s player argues that their skill in the <span class="trait">diabolical</span> allows them to know exactly what will work, and they
         also spend a <svg class="pp"><use href="#PP" /></svg> to find a stock of supplies.</p>
@@ -627,7 +677,6 @@
     <p>Dakota’s result manages to just beat the GMs, so they succeed.</p>
     <p>Dakota cobbles together the Molotov and tosses it at the beast. The shoggoth is now on fire and distracted enough
         to let Dakota get away.</p>
-    <hr>
     <div class="license-footer">
         <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
                     style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
